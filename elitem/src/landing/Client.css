@@ -1,0 +1,23 @@
+.client_image {
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 3px;
+    padding: 30px 20px;
+    margin: 0 10px;
+}
+
+.client_image:hover {
+    cursor: pointer;
+}
+
+.client_image > img {
+    height: 300px;
+}
+
+.client > h1 {
+    padding: 0 15px 0;
+}
+
+.client > h2 {
+    padding: 0 15px 0;
+}
+

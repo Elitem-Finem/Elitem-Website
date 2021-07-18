@@ -1,0 +1,19 @@
+.social {
+    position: fixed;
+    width: 50px;
+    height: 100vh;
+    right: 0;
+    top: 5rem;
+    z-index: 100;
+}
+
+.social > a {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: var(--font-form);
+    font-weight: 400;
+    font-size: 22px;
+    margin: 20px 0;
+    color: var(--accent);
+    text-decoration: none;
+}

@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 50.5px 10px 40px;
+}
+
+.footer_logo > img {
+    height: 40px;
+}
+
+.footer_right {
+    margin: 0 30px; 
+}
+
+.footer_right > h1 {
+    color: var(--less-white);
+    font-family: var(--font-form);
+    font-weight: 400;
+    font-size: 22px;
+}
