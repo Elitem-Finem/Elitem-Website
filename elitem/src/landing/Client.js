@@ -1,15 +1,14 @@
 import React from 'react';
 import './Client.css';
 
-function Client({ img }) {
+function Client({ img, title, description, url }) {
     return (
-        <div className='client'>
-            <div className='client_image'>
-                <img alt='previous_client' src={img}/>
+        <a href={url} target="_blank">
+            <div style={{ backgroundImage: `url(${img})`}} className='client'>
+                <h1>{title}</h1>
+                <h2>{description}</h2>
             </div>
-            <h1>Title</h1>
-            <h2>Description</h2>
-        </div>
+        </a>
     )
 }
 

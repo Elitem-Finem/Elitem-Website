@@ -2,11 +2,14 @@ import React from 'react';
 import Header from './Header.js';
 import Client from './Client.js';
 import Form from './Form.js';
+import Support from './Messenger.js';
 import Footer from './Footer.js';
 import Social from './Social.js';
 import './Landing.css';
 import TrendingFlatRoundedIcon from '@material-ui/icons/TrendingFlatRounded';
-import Example_Image from '../images/StandIn.png';
+import Covibes from '../images/Covibes.png';
+import Messenger from '../images/Messenger.png';
+import UCSDCircleK from '../images/UCSDCircleK.png';
 
 function Landing() {
     return (
@@ -29,12 +32,12 @@ function Landing() {
             <div className='landing_example'>
                 <h1>{'//'} Our Work</h1>
                 <div className='landing_exampleClients'>
-                    <Client img={Example_Image}/>
+                    <Client img={Covibes} title='Covibes' description='plots Covid vaccine reviews' url='https://covibes-client.herokuapp.com/'/>
                     <div className='landing_exampleClient2'>
-                        <Client img={Example_Image} />
+                        <Client img={UCSDCircleK} title='UCSD Circle K' description='the current UCSD Circle K service organization website' url='https://ucsdcirclek.com/'/>
                     </div>
                     <div className='landing_exampleClient3'>
-                    <Client img={Example_Image} />
+                    <Client img={Messenger} title='Messenger Clone' description='a simplified copy of Facebook messenger' url='https://facebook-messenger-clone-74a06.web.app/'/>
                     </div>
                 </div>
             </div>
@@ -53,7 +56,7 @@ function Landing() {
                 <div className='landing_formEmail'>      
                     <Form/>
                 </div>
-                <h1>Hello World!</h1>
+                <Support/>
             </div>
             {/* Footer */}
             <Footer/>
