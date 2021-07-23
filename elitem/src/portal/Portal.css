@@ -1,0 +1,18 @@
+.portal {
+    background-color: var(--less-white);
+    padding: 0 0 40px 0;
+}
+
+.portal_recovery {
+    text-align: center;
+    font-family: var(--font-form);
+    color: var(--less-grey);
+    font-size: 22px;
+    margin: 5px 0 0 0;
+    transition: color 0.3s ease;
+}
+
+.portal_recovery:hover {
+    color: var(--accent);
+    
+}

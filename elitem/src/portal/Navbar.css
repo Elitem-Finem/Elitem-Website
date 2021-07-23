@@ -1,33 +1,33 @@
-.header {
+.navbar {
     display: flex;
     align-items: center;
     padding: 10px 50.5px 10px 40px;
 }
 
-.header_logo {
+.navbar_logo {
     flex: 0.33;
 }
 
-.header_logo img {
+.navbar_logo img {
     height: 40px;
 }
 
-.header > h1 {
+.navbar > h1 {
     flex: 0.34;
     text-align: center;
     font-family: var(--font-form);
     font-weight: 600;
     font-size: 32px;
-    color: var(--less-white);
+    color: var(--background);
 }
 
-.header_icon {
+.navbar_icon {
     flex: 0.33;
     display: flex;
     justify-content: flex-end;
 }
 
-.header_iconInner {
+.navbar_iconInner {
     transform: scale(1.4);
-    color: var(--less-white);
+    color: var(--background);
 }
