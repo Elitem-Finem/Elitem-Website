@@ -26,3 +26,20 @@
     cursor: pointer;
     transform: scale(1.01);
 }
+
+.admin_console {
+    display: flex;
+}
+
+.admin_console > div {
+    flex: 0.5;
+}
+
+.admin_consumer {
+    color: var(--less-white);
+    font-family: var(--font-form);
+    font-size: 22px;
+    font-weight: 300;
+    margin: 15px 0 0 0;
+    height: 500px;
+}

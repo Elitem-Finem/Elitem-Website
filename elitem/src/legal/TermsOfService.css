@@ -1,0 +1,48 @@
+.termsOfService {
+    background-color: var(--less-white);
+}
+
+.tos_inner {
+    max-width: 1500px;
+    min-width: 500px;
+    padding: 0 60px;
+    margin: 50px auto 40px;
+    font-family: var(--font-form);
+}
+
+.tos_inner > h1 {
+    font-size: 36px;
+}
+
+.tos_revision {
+    margin: 10px 0 !important;
+    font-size: 16px !important;
+    font-weight: lighter;
+}
+
+.tos_inner > p {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.tos_content > h1 {
+    padding: 30px 0;
+    border-bottom: 1px solid grey;
+    font-size: 32px;
+}
+
+.tos_content > h2 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.tos_content > p {
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.tos_content > ol > li {
+    font-size: 16px;
+    margin: 10px 0;
+}

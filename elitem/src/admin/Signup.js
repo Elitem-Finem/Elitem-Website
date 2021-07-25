@@ -7,6 +7,7 @@ function Signup() {
     const emailRef = useRef();
     const passwordRef = useRef();
     const passwordConfirmRef = useRef();
+    const companyRef = useRef();
     const { signup, createAdmin } = useAuth();
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -22,7 +23,7 @@ function Signup() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            await createAdmin()
+            await createAdmin(companyRef.current.value)
             setError('user successfully created')
         } catch {
             setError('failed to create an account')
@@ -36,6 +37,12 @@ function Signup() {
             <PersonAddIcon className='signup_icon'/>
             <h1>Add a User</h1>
             <h2>{error}</h2>
+            <label>Organization</label>
+            <input
+                type='text'
+                ref={companyRef}
+                required
+            />
             <label>Email</label>
             <input
                 type='email'

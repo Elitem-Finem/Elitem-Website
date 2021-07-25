@@ -4,6 +4,7 @@ import Portal from './portal/Portal.js';
 import Recovery from './portal/recovery/Recovery.js';
 import Admin from './admin/Admin.js';
 import Dashboard from './portal/dashboard/Dashboard.js';
+import TermsOfService from './legal/TermsOfService.js';
 import PrivateRoute from './routes/PrivateRoute.js';
 import { AuthProvider } from './contexts/AuthContext';
 import './App.css';
@@ -26,10 +27,11 @@ function App() {
               <Route path='/password-recovery' component={Recovery}/>
               {/* Portal */}
               <Route path='/portal' component={Portal} />
-              {/* Landing */}
-              <Route path="/" component={Landing} />
               {/* Privacy Policy */}
               {/* Terms of Service */}
+              <Route path='/terms-of-service' component={TermsOfService} />
+              {/* Landing */}
+              <Route path='/' component={Landing} />
             </Switch>
           </AuthProvider>
         </Router>

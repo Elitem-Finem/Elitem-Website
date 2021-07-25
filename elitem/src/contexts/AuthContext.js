@@ -31,9 +31,10 @@ export function AuthProvider({ children }) {
         return currentUser.updateEmail(email)
     }
 
-    function createAdmin() {
+    function createAdmin(name) {
         return db.collection('users').doc(auth.currentUser.uid).set({
-            admin:false
+            admin:false,
+            name:name
         }).catch((error) => {
             console.log('database error');
         })
