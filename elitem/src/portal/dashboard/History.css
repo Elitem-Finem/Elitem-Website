@@ -1,0 +1,16 @@
+.history {
+    border: 3px solid var(--light-grey);
+    border-radius: 5px;
+    margin: 30px 10px;
+    font-family: var(--font-form);
+}
+
+.history_transactions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.history_documents {
+    display: flex;
+    justify-content: space-around;
+}

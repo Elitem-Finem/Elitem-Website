@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import Navbar from '../Navbar.js';
+import History from './History.js';
 import { auth, db } from '../../firebase.js';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -71,7 +72,6 @@ function Dashboard() {
                                 maxValue={31}
                                 styles={buildStyles({
                                     pathColor: '#80C27F',
-                                    //trailColor: '#787F90',
                                     backgroundColor: '#787F90'
                                 })}
                             />
@@ -92,6 +92,7 @@ function Dashboard() {
                         <h1>Pay Now</h1>
                     </div>
                 </div>
+                <History/>
             </div>
         </div>
     )
