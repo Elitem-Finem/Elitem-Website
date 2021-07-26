@@ -2,9 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import Navbar from '../Navbar.js';
 import History from './History.js';
+import Contact from './Contact.js';
 import { auth, db } from '../../firebase.js';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { useAuth } from '../../contexts/AuthContext';
+import { useHistory } from "react-router-dom";
 import 'react-circular-progressbar/dist/styles.css';
+
 
 
 const present_day = new Date().getDate(); // the current date in this case is 25
@@ -24,6 +28,20 @@ function Dashboard() {
     const [inverse, setInverse] = useState();
     const [payment, setPayment] = useState();
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+    const { logout } = useAuth();
+    const history = useHistory();
+
+
+    async function handleLogout() {
+        setError('')
+        try {
+            await logout()
+            history.push('/portal')
+        } catch {
+            setError('failed to log out')
+        }
+    }
 
     useEffect(() => {
         const fetchData = async() => {
@@ -93,6 +111,15 @@ function Dashboard() {
                     </div>
                 </div>
                 <History/>
+                <div className='dashboard_lower'>
+                    <div className='dashboard_preview'>
+                        <h1>Website Preview</h1>
+                        <iframe src={!loading && user.website}/>
+                        <button onClick={handleLogout}>Logout</button>
+                        <h2>{error}</h2>
+                    </div>
+                    <div><Contact /></div>
+                </div>
             </div>
         </div>
     )

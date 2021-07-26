@@ -3,7 +3,7 @@ import './History.css';
 import { auth, db } from '../../firebase.js';
 
 function History() {
-    const [transaction, setTransaction] = useState();
+    const [transaction, setTransaction] = useState([]);
     const [loading, setLoading] = useState();
 
     useEffect(() => {
@@ -23,10 +23,10 @@ function History() {
             </div>
             {transaction.map((document) => (
                 <div className='history_documents'>
-                <h1>{document.data.time}</h1>
-                <h1>{document.data.description}</h1>
-                <h1>{document.data.amount}</h1>
-                <h1>more details</h1>
+                    <h1>{document.data.time}</h1>
+                    <h1>{document.data.description}</h1>
+                    <h1>{document.data.amount}</h1>
+                    <h2>View Details</h2>
                 </div>
             ))}
             

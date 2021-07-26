@@ -1,0 +1,42 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-grey);
+    font-family: var(--font-form);
+    border-radius: 5px;
+    margin: 0 10px 40px;
+    padding: 20px;
+}
+
+.contact > h1 {
+    text-align: center;
+    margin: 0 0 40px;
+    font-size: 32px;
+}
+
+.contact > label {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.contact > input {
+    height: 24px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--less-white);
+    font-size: 18px;
+    padding: 2px;
+}
+
+.contact > textarea {
+    resize: none;
+    height: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--less-white);
+    font-size: 18px;
+    padding: 2px;
+    font-family: var(--font-form);
+}

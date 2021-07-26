@@ -2,15 +2,39 @@
     border: 3px solid var(--light-grey);
     border-radius: 5px;
     margin: 30px 10px;
+    padding: 40px;
     font-family: var(--font-form);
+    max-height: 700px;
+}
+
+.history > h1 {
+    font-size: 32px;
+    margin: 0 0 10px;
 }
 
 .history_transactions {
     display: flex;
-    justify-content: space-around;
+}
+
+.history_transactions > h2 {
+    text-align: left;
+    flex: 0.25;
+    font-size: 22px;
+    margin: 0 0 20px;
 }
 
 .history_documents {
     display: flex;
-    justify-content: space-around;
+}
+
+.history_documents > h1 {
+    flex: 0.25;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.history_documents > h2 {
+    flex: 0.25;
+    font-size: 18px;
+    color: var(--status-blue);
 }
