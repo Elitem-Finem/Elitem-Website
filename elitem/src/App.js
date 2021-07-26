@@ -5,6 +5,7 @@ import Recovery from './portal/recovery/Recovery.js';
 import Admin from './admin/Admin.js';
 import Dashboard from './portal/dashboard/Dashboard.js';
 import TermsOfService from './legal/TermsOfService.js';
+import PrivacyPolicy from './legal/PrivacyPolicy.js';
 import PrivateRoute from './routes/PrivateRoute.js';
 import { AuthProvider } from './contexts/AuthContext';
 import './App.css';
@@ -28,6 +29,7 @@ function App() {
               {/* Portal */}
               <Route path='/portal' component={Portal} />
               {/* Privacy Policy */}
+              <Route path='/privacy-policy' component={PrivacyPolicy} />
               {/* Terms of Service */}
               <Route path='/terms-of-service' component={TermsOfService} />
               {/* Landing */}
